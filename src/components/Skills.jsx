@@ -7,6 +7,7 @@ const Skills = ({ skillList }) => {
       <h1
         style={{
           textAlign: "center",
+          marginTop: "2rem",
         }}
       >
         Skills

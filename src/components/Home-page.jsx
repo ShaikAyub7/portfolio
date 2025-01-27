@@ -20,7 +20,7 @@ const Home = () => {
         <h2
           className="hero-title"
           style={{
-            marginBottom: "1rem",
+            marginBottom: "1.3rem",
             textAlign: "center",
             marginTop: "2rem",
           }}
@@ -30,7 +30,7 @@ const Home = () => {
 
         <h1
           className="hero-text"
-          style={{ lineHeight: "1.5rem", textAlign: "center" }}
+          style={{ lineHeight: "1.9rem", textAlign: "center" }}
         >
           I&apos;m Shaik Ayub
         </h1>

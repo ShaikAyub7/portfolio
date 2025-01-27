@@ -6,6 +6,7 @@ const Projects = () => {
       <h1
         style={{
           textAlign: "center",
+          marginTop: "2.5rem  ",
         }}
       >
         My Projects

@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar.jsx";
 import Projects from "./components/projects.jsx";
 import Skills from "./components/Skills.jsx";
 
+import { skillList } from "./data.jsx";
 function App() {
   return (
     <>
@@ -11,7 +12,7 @@ function App() {
       <Home />
       <About />
       <Projects />
-      <Skills />
+      <Skills skillList={skillList} />
     </>
   );
 }

@@ -1,11 +1,10 @@
-/* eslint-disable react/no-unknown-property */
 import { socialLinks } from "../data";
 import "../index.css";
 socialLinks;
 
 const Home = () => {
   return (
-    <div className="hero container">
+    <div className="hero container" id="home">
       <div className="hero-content">
         <div className="hero-img">
           <img

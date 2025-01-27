@@ -182,3 +182,39 @@ body {
 .links a {
   color: white;
 }
+@media screen and (max-width: 600px) {
+  .project-card img {
+    width: 300px;
+    max-width: 200px;
+    max-height: 4%;
+    /* margin-right: 2rem; */
+    border-radius: 10px;
+  }
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2rem;
+    background: #fff;
+    border-radius: 10px;
+  }
+  .projects {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .Skills {
+    margin: 2rem auto;
+    max-width: 400px;
+  }
+  .skill-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+}

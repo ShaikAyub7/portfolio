@@ -5,7 +5,7 @@ const About = () => {
       <h1 style={{ textAlign: "center", marginBottom: "2rem" }}>About</h1>
 
       <p
-        style={{ textAlign: "center", lineHeight: "1.5rem", fontWeight: "600" }}
+        style={{ textAlign: "center", lineHeight: "1.5rem", fontWeight: "400" }}
       >
         Hi, I’m Shaik Ayub, a passionate front-end developer dedicated to
         crafting seamless, user-friendly web experiences. With a keen eye for

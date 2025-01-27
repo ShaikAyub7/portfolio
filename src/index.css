@@ -77,7 +77,6 @@ body {
 .projects {
   max-width: 800px;
   border-top: 1px solid #c8cbd0;
-
   margin: 0 auto;
 }
 
@@ -86,32 +85,29 @@ body {
   padding: 10px;
   justify-content: center;
   align-items: center;
-
   margin-top: 2rem;
-  background: #c8cbd0;
-  /* color: #c8cbd0; */
-
+  background: #fff;
   border-radius: 10px;
 }
 .project-card:hover {
-  transform: scale(1);
+  transform: scale(1.1);
+  transition: all 1s ease-in-out;
 }
 .project-card img {
   width: 400px;
   max-width: 400px;
   max-height: 400px;
-  margin-right: 2rem;
   border-radius: 10px;
+  object-fit: contain;
 }
+
 .card-content {
   text-align: center;
   color: #000;
   line-height: 1.5rem;
   padding: 5px;
 }
-/* <!-- HTML !--> */
 
-/* CSS */
 .button-18 {
   align-items: center;
   background-color: #0a66c2;
@@ -223,4 +219,35 @@ body {
     margin-top: 2rem;
     font-size: 1rem;
   }
+}
+/* Name animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-name {
+  animation: fadeIn 1.5s ease-out;
+}
+
+/* Icon bounce animation */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-icon {
+  animation: bounce 1.5s ease infinite;
+  animation-delay: 0.3s;
 }

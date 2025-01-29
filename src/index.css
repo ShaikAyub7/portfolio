@@ -360,9 +360,18 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    place-items: center;
     justify-content: space-between;
     margin-top: 2rem;
     font-size: 1rem;
+  }
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+    flex-wrap: wrap;
   }
 }
 /* Name animation */

@@ -11,8 +11,8 @@ function App() {
       <Navbar />
       <Home />
       <About />
-      <Projects />
       <Skills skillList={skillList} />
+      <Projects />
     </>
   );
 }

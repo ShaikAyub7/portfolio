@@ -33,7 +33,7 @@ export const skillList = [
   },
   {
     language: "CSS",
-    icon: "./image copy.png",
+    icon: "./css icon.png",
   },
   {
     language: "Javascript",
@@ -41,15 +41,15 @@ export const skillList = [
   },
   {
     language: "Node js",
-    icon: "./image copy 3.png",
+    icon: "./nodejs icon.png",
   },
   {
     language: "ExpressJs",
-    icon: "./image copy 4.png",
+    icon: "./expressjs icon.png",
   },
   {
     language: "MySql",
-    icon: "./image copy 5.png",
+    icon: "./sql icon.png",
   },
   {
     language: "Mongodb",
@@ -57,7 +57,7 @@ export const skillList = [
   },
   {
     language: "ReactJs",
-    icon: "./image copy 7.png",
+    icon: "./reactjs icon.png",
   },
 ];
 export const socialLinks = [

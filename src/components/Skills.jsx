@@ -20,13 +20,14 @@ const Skills = ({ skillList }) => {
               src={skill.icon}
               alt=""
               style={{
-                width: "30px",
-                height: "30px",
+                width: "25px",
+                height: "25px",
                 textAlign: "center",
                 marginRight: "1rem",
+                objectFit: "cover",
               }}
             />
-            <span>{skill.language}</span>
+            <span style={{ fontSize: "1.2rem" }}>{skill.language}</span>
           </li>
         ))}
       </div>

@@ -4,7 +4,7 @@ import "../index.css";
 const Home = () => {
   return (
     <motion.div
-      className="hero container"
+      className="hero "
       id="home"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}

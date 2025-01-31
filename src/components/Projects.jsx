@@ -2,14 +2,14 @@ import { cardsText } from "../data";
 import "../index.css";
 const Projects = () => {
   return (
-    <div className="projects container mx-auto py-10 px-4" id="projects">
+    <div className="projects  mx-auto py-10 px-4" id="projects">
       <h2
         style={{
           textAlign: "center",
           marginBottom: "2rem",
           marginTop: "2rem",
           fontSize: "2rem",
-          boxShadow: " 0 2.4rem 4.8rem rgba(0, 0, 0, 0.381)",
+          // boxShadow: " 0 2.4rem 4.8rem rgba(0, 0, 0, 0.381)",
           width: "100%",
         }}
       >

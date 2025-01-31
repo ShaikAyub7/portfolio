@@ -11,8 +11,8 @@ body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
 
-  background: #0f172a;
-  color: #c8cbd0;
+  background: #fdfffc;
+  color: #000;
 }
 .container {
   max-width: 1100px;
@@ -58,6 +58,9 @@ body {
   text-decoration: none;
   list-style: none;
   justify-content: space-between;
+}
+.hero {
+  background: #fffaeb;
 }
 .hero-content {
   display: flex;
@@ -136,12 +139,12 @@ body {
 /* From Uiverse.io by andrew-demchenk0 */
 .card {
   --font-color: #323232;
-  --bg-color: #e0e0e0;
+  /* --bg-color: #e0e0e0; */
   width: 250px;
   height: 400px;
   border-radius: 15px;
   background: var(--bg-color);
-  /* box-shadow: -9px 9px 18px #5a5a5a, 9px -9px 18px #ffffff; */
+  box-shadow: -9px 9px 8px #5a5a5a, 9px -9px 8px #ffffff;
   display: flex;
   flex-direction: column;
   transition: 0.4s;

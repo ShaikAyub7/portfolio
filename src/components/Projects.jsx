@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { cardsText } from "../data";
 import "../index.css";
 const Projects = () => {

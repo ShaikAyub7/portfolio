@@ -18,7 +18,7 @@ const Projects = () => {
       </h2>
       <div className="cards-container">
         {cardsText.map((card, index) => (
-          <div className="card">
+          <div className="card" key={card.id}>
             <div key={index} className="card__img">
               <img src={card.image} alt="" />
             </div>
@@ -39,7 +39,7 @@ const Projects = () => {
                     Preview
                   </a>
                 </div>
-                <div>
+                {/* <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 496 512"
@@ -50,7 +50,7 @@ const Projects = () => {
                   <a className="link" href="#">
                     Code
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

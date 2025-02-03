@@ -217,6 +217,7 @@ body {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.05);
   border-radius: 11px;
   overflow: hidden;
+
   transition: all 0.5s;
 }
 
@@ -338,6 +339,13 @@ body {
     max-height: 4%;
     /* margin-right: 2rem; */
     border-radius: 10px;
+  }
+  .about {
+    text-align: start;
+  }
+  .about p {
+    font-size: 12px;
+    text-align: start;
   }
   .project-card {
     display: flex;

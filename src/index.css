@@ -384,7 +384,7 @@ body {
     flex-wrap: wrap;
   }
 }
-/* Name animation */
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -400,7 +400,6 @@ body {
   animation: fadeIn 1.5s ease-out;
 }
 
-/* Icon bounce animation */
 @keyframes bounce {
   0%,
   100% {

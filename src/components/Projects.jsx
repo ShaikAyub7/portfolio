@@ -1,3 +1,4 @@
+import { cardsText } from "../data";
 import {
   Card,
   Image,
@@ -7,7 +8,6 @@ import {
   Group,
   Container,
 } from "@mantine/core";
-import { cardsText } from "../data";
 
 function Demo() {
   return (

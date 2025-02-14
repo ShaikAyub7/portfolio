@@ -38,7 +38,7 @@ function Demo() {
                   flexDirection: "column",
                 }}
               >
-                <Card.Section component="a" href={card.link}>
+                <Card.Section component="a" href={card.link} target="blank">
                   <Image src={card.image} height={200} alt={card.name} />
                 </Card.Section>
                 <Group justify="space-between" mt="md" mb="xs">
@@ -54,6 +54,7 @@ function Demo() {
                   radius="md"
                   component="a"
                   href={card.link}
+                  target="blank"
                 >
                   Preview
                 </Button>

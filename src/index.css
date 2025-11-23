@@ -76,10 +76,19 @@ body {
   border-top: 1px solid #c8cbd0;
 }
 .projects {
-  /* max-width: 800px; */
+  max-width: 800px;
   border-top: 1px solid #c8cbd0;
   margin: 0 auto;
+
   padding-bottom: 6.9rem;
+}
+.icon-link:hover {
+  scale: 1.2;
+}
+.project-center {
+  display: grid;
+  justify-content: center;
+  place-content: center;
 }
 .cards {
   display: grid;

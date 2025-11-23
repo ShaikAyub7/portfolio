@@ -102,7 +102,12 @@ const Home = () => {
             <motion.a
               href="https://www.linkedin.com/in/shaik-ayub7"
               className="icon-link"
-              whileHover={{ scale: 1.2, rotate: -5 }}
+              whileHover={{
+                scale: 1.2,
+                rotate: -5,
+                background: "blue",
+                color: "red",
+              }}
               whileTap={{ scale: 0.9 }}
             >
               <i

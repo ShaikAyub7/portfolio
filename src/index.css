@@ -65,13 +65,11 @@ body {
   flex-direction: column;
   padding: 5rem;
   justify-items: center;
-  /* max-width: 800px; */
   margin: 0 auto;
   align-items: center;
 }
 .about {
   padding: 5rem;
-  /* max-width: 800px; */
   margin: 0 auto;
   border-top: 1px solid #c8cbd0;
 }

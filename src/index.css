@@ -95,14 +95,7 @@ body {
   flex-wrap: wrap;
   margin-top: 2rem;
 }
-/* .project-card {
-  background-color: #ffffff;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.05);
-  border-radius: 11px;
-  overflow: hidden;
-  transition: all 0.5s;
-}
-
+/* 
 .project-card:hover {
   transform: scale(1.1);
   transition: all 0.5s ease-in-out;

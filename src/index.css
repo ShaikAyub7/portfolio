@@ -112,7 +112,6 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 350px;
-  /* padding: 10px; */
   justify-content: center;
 
   align-items: center;
@@ -134,7 +133,6 @@ body {
   gap: 2rem;
   flex-wrap: wrap;
 }
-/* From Uiverse.io by andrew-demchenk0 */
 .card {
   --font-color: #323232;
   --bg-color: #e0e0e0;
@@ -142,7 +140,6 @@ body {
   height: 400px;
   border-radius: 15px;
   background: var(--bg-color);
-  /* box-shadow: -9px 9px 8px #5a5a5a, 9px -9px 8px #ffffff; */
   display: flex;
   flex-direction: column;
   transition: 0.4s;
@@ -159,7 +156,6 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
-  /* background-color: blueviolet; */
 }
 .card__img img {
   width: 250px;
@@ -211,7 +207,6 @@ body {
   text-decoration: underline;
 }
 
-/* //////////// */
 .about-us {
   background-color: #ffffff;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.05);
@@ -244,8 +239,6 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
-/* //////////// */
 
 .card-content {
   text-align: center;
@@ -340,13 +333,16 @@ body {
     /* margin-right: 2rem; */
     border-radius: 10px;
   }
+
   .about {
     text-align: start;
   }
+
   .about p {
     font-size: 12px;
     text-align: start;
   }
+
   .project-card {
     display: flex;
     flex-direction: column;
@@ -375,6 +371,7 @@ body {
     margin-top: 2rem;
     font-size: 1rem;
   }
+
   .cards-container {
     display: grid;
     grid-template-columns: 1fr;

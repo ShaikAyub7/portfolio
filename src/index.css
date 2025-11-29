@@ -100,6 +100,7 @@ body {
   transform: scale(1.1);
   transition: all 0.5s ease-in-out;
 }
+  
 .project-card img {
   width: 400px;
   max-width: 300px;
@@ -301,7 +302,7 @@ body {
 }
 .Skills {
   margin: 4rem auto;
-  /* max-width: 800px; */
+  max-width: 800px;
   border-top: 1px solid #c8cbd0;
 }
 .skill-list {

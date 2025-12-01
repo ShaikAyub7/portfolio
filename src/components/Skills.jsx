@@ -9,6 +9,7 @@ import {
   Group,
   Container,
 } from "@mantine/core";
+
 const Skills = ({ skillList }) => {
   return (
     <Container>

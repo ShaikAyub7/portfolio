@@ -4,6 +4,8 @@ export const projects = [
     text: "Developed a Chrome extension to track user activity across tabs, displaying time spent on eachdomain in a user-friendly interface. ",
     image: "./extension.png",
     technologies: " JavaScript, HTML, CSS",
+    github: "https://github.com/ShaikAyub7/Chrome-Extension",
+
     link: "https://microsoftedge.microsoft.com/addons/detail/tab-time-tracker/aoecofhfffbfnkekppdgicmnfjmfdmoe",
     id: 1,
   },
@@ -13,7 +15,8 @@ export const projects = [
     text: "AI-powered web application using React.js and Google Gemini API with real-time responses and improved UX.",
     image: "./gptgenius.png",
     technologies: "React.js, Gemini API",
-    link: "#",
+    link: "https://gpt-genius-hazel.vercel.app/",
+    github: "https://github.com/ShaikAyub7/GPTGenius",
   },
   {
     id: 3,
@@ -21,7 +24,8 @@ export const projects = [
     text: "React-based weather app showing live temperature, humidity, wind speed, and conditions with search functionality.",
     image: "./cloudlink.png",
     technologies: "React.js, Weather API",
-    link: "#",
+    link: "https://weather--app-1.vercel.app/",
+    github: "https://github.com/ShaikAyub7/Weather-Api",
   },
 ];
 export const skillList = [

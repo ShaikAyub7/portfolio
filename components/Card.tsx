@@ -47,7 +47,7 @@ export default function Projects() {
                   </a>
 
                   <a
-                    href={project.link}
+                    href={project.github}
                     target="_blank"
                     className="flex items-center gap-2 text-sm  px-4 py-2 rounded-lg hover:bg-gray-600 transition"
                   >

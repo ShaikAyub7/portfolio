@@ -32,7 +32,6 @@ export default function HomePage() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
       >
-        {/* Profile Image */}
         <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
@@ -47,7 +46,6 @@ export default function HomePage() {
           />
         </motion.div>
 
-        {/* Greeting */}
         <motion.h2
           className="mt-6 text-lg text-gray-300"
           initial={{ opacity: 0 }}
@@ -57,14 +55,12 @@ export default function HomePage() {
           Hi There!
         </motion.h2>
 
-        {/* 🔥 REAL Typing Effect */}
         <h1 className="text-3xl sm:text-4xl font-bold mt-2 flex items-center">
           <span className="text-white">{text}</span>
 
           <span className="ml-1 animate-pulse font-extralight">|</span>
         </h1>
 
-        {/* Social Links */}
         <motion.div
           className="flex gap-6 mt-6"
           initial="hidden"

@@ -14,13 +14,13 @@ export default function Projects() {
           My Projects
         </h2>
 
-        <div className=" flex flex-col gap-5 ">
+        <div className=" flex flex-col gap-5 md:flex-col  sm:flex-row ">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="flex  group items-center justify-around  bg-white/10 backdrop-blur-md border text-white border-white/20 rounded-2xl overflow-hidden transition duration-300 hover:scale-103   p-6"
+              className="block lg:flex md:flex group items-center justify-around  bg-white/10 backdrop-blur-md border text-white border-white/20 rounded-2xl overflow-hidden transition duration-300 hover:scale-103   p-6"
             >
-              <div className="overflow-hidden w-2xl">
+              <div className="overflow-hidden lg:w-2xl md:w-xl  w-full">
                 <img
                   src={project.image}
                   alt={project.name}
@@ -28,7 +28,7 @@ export default function Projects() {
                 />
               </div>
 
-              <div className="p-5 flex flex-col gap-3 w-lg">
+              <div className="p-5 flex flex-col gap-3 w-full lg:w-lg">
                 <h3 className="text-lg font-semibold text-white">
                   {project.name}
                 </h3>

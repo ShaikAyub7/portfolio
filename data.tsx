@@ -108,27 +108,27 @@ export const socialLinks = [
 ];
 export const navbarLink = [
   {
-    href: "#home",
+    href: "/",
     text: "Home",
     id: 1,
   },
   {
-    href: "#about",
+    href: "/about",
     text: "About",
     id: 2,
   },
   {
-    href: "#skill",
+    href: "/skills",
     text: "Skills",
     id: 3,
   },
   {
-    href: "#projects",
+    href: "/projects",
     text: "Projects",
     id: 4,
   },
   {
-    href: "#home",
+    href: "/contact",
     text: "Contact",
     id: 5,
   },

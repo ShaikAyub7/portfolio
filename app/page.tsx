@@ -1,10 +1,9 @@
 import About from "@/components/About";
 import Projects from "@/components/Card";
+import Footer from "@/components/Footer";
 import HomePage from "@/components/HomePage";
 import Navbar from "@/components/Navbar";
 import Skills from "@/components/Skills";
-import { main } from "framer-motion/client";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -14,6 +13,7 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
+      <Footer />
     </main>
   );
 }

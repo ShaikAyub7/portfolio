@@ -11,3 +11,11 @@ html {
 body {
   background: #0f172a;
 }
+* {
+  cursor: none !important;
+}
+@media (min-width: 768px) {
+  * {
+    cursor: none !important;
+  }
+}

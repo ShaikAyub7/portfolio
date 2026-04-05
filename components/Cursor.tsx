@@ -1,51 +1,65 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 
 /* 🔥 Cursor Image */
 const CursorImage = () => {
   return (
     <Image
-      src="/arrow.png" // ✅ put inside public/
+      src="/arrow.png"
       alt="cursor"
-      width={40}
-      height={40}
+      width={30}
+      height={30}
       className="w-8 h-8"
     />
   );
 };
 
 export default function FinalCursor() {
-  const [pos, setPos] = useState({ x: 0, y: 0 });
-  const [smoothPos, setSmoothPos] = useState({ x: 0, y: 0 });
-  const [label, setLabel] = useState<ReactNode>(<CursorImage />);
-  const [ripples, setRipples] = useState<any[]>([]);
-  const [hover, setHover] = useState(false);
+  const cursorRef = useRef<HTMLDivElement>(null);
+  const glowRef = useRef<HTMLDivElement>(null);
 
-  /* 🎯 Mouse Move */
+  const pos = useRef({ x: 0, y: 0 });
+  const smooth = useRef({ x: 0, y: 0 });
+
+  const [label, setLabel] = useState<ReactNode>(<CursorImage />);
+  const [hover, setHover] = useState(false);
+  const [ripples, setRipples] = useState<any[]>([]);
+
+  /* 🎯 Mouse Move (no re-render) */
   useEffect(() => {
     const move = (e: MouseEvent) => {
-      setPos({ x: e.clientX, y: e.clientY });
+      pos.current = { x: e.clientX, y: e.clientY };
     };
 
     window.addEventListener("mousemove", move);
     return () => window.removeEventListener("mousemove", move);
   }, []);
 
-  /* 🔥 Smooth Follow */
+  /* 🔥 Smooth Animation (no state = no lag) */
   useEffect(() => {
-    const follow = () => {
-      setSmoothPos((prev) => ({
-        x: prev.x + (pos.x - prev.x) * 0.15,
-        y: prev.y + (pos.y - prev.y) * 0.15,
-      }));
+    const animate = () => {
+      smooth.current.x += (pos.current.x - smooth.current.x) * 0.15;
+      smooth.current.y += (pos.current.y - smooth.current.y) * 0.15;
 
-      requestAnimationFrame(follow);
+      if (cursorRef.current) {
+        cursorRef.current.style.transform = `translate(${
+          smooth.current.x - 6
+        }px, ${smooth.current.y - 6}px)`;
+      }
+
+      if (glowRef.current) {
+        glowRef.current.style.transform = `translate(${
+          smooth.current.x - 32
+        }px, ${smooth.current.y - 32}px)`;
+      }
+
+      requestAnimationFrame(animate);
     };
 
-    follow();
-  }, [pos]);
+    animate();
+  }, []);
 
   /* 💥 Click Ripple */
   useEffect(() => {
@@ -62,7 +76,7 @@ export default function FinalCursor() {
     return () => window.removeEventListener("click", click);
   }, []);
 
-  /* 🧠 Smart Hover Detection */
+  /* 🧠 Smart Hover */
   useEffect(() => {
     const hoverHandler = (e: Event) => {
       const el = e.target as HTMLElement;
@@ -91,29 +105,25 @@ export default function FinalCursor() {
 
   return (
     <>
-      {/* 🌟 Glow Aura */}
+      {/* 🌟 Glow */}
       <div
-        className="fixed pointer-events-none z-[99999998] w-16 h-16 rounded-full blur-2xl bg-blue-500 opacity-30"
-        style={{
-          transform: `translate(${smoothPos.x - 32}px, ${smoothPos.y - 32}px)`,
-        }}
+        ref={glowRef}
+        className="fixed pointer-events-none z-[99999999999998] w-16 h-16 rounded-full blur-2xl bg-blue-500 opacity-30"
       />
 
-      {/* 🎯 Main Cursor */}
+      {/* 🎯 Cursor */}
       <div
-        className={`fixed pointer-events-none z-[9999099999] transition-all duration-150 ${
+        ref={cursorRef}
+        className={`fixed pointer-events-none z-[999999999999] transition-all duration-150 ${
           hover
             ? "bg-black text-blue-400 border border-blue-500 px-3 py-1 rounded-md text-xs font-mono"
             : ""
         }`}
-        style={{
-          transform: `translate(${smoothPos.x}px, ${smoothPos.y}px) translate(-50%, -50%)`,
-        }}
       >
         {label}
       </div>
 
-      {/* 💥 Click Ripple */}
+      {/* 💥 Ripple */}
       {ripples.map((r) => (
         <div
           key={r.id}

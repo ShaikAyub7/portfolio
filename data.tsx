@@ -26,36 +26,76 @@ export const projects = [
 ];
 export const skillList = [
   {
-    language: "HTML",
-    icon: "./image.png",
+    language: "HTML5",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
   },
   {
-    language: "CSS",
-    icon: "./css icon.png",
+    language: "CSS3",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
   },
   {
-    language: "Javascript",
-    icon: "./image copy 2.png",
+    language: "JavaScript",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
   },
   {
-    language: "Node js",
-    icon: "./nodejs icon.png",
+    language: "TypeScript",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+  },
+
+  {
+    language: "React.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
   {
-    language: "ExpressJs",
-    icon: "./expressjs icon.png",
+    language: "Next.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+  },
+
+  {
+    language: "Node.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
   },
   {
-    language: "MySql",
-    icon: "./sql icon.png",
+    language: "Express.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+  },
+
+  {
+    language: "MongoDB",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
   },
   {
-    language: "Mongodb",
-    icon: "./image copy 6.png",
+    language: "MySQL",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+  },
+
+  {
+    language: "Tailwind CSS",
+    icon: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
   },
   {
-    language: "ReactJs",
-    icon: "./reactjs icon.png",
+    language: "Bootstrap",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+  },
+
+  {
+    language: "Git",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+  },
+  {
+    language: "GitHub",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+  },
+
+  {
+    language: "VS Code",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+  },
+
+  // API (no official icon → use Postman)
+  {
+    language: "REST API",
+    icon: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
   },
 ];
 export const socialLinks = [

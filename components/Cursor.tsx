@@ -20,7 +20,7 @@ export default function Cursor() {
     <motion.img
       src="/arrow.png"
       alt="cursor"
-      style={{ x, y }} // 🔥 no animation, direct position
+      style={{ x, y }}
       className="fixed w-8 h-8 pointer-events-none z-[999999999]"
     />
   );

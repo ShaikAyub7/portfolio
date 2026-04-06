@@ -7,7 +7,7 @@ import { FaSquareGithub, FaLinkedin } from "react-icons/fa6";
 import { useEffect, useState } from "react";
 
 export default function HomePage() {
-  const fullText = "I Am Shaik Ayub";
+  const fullText = "I am Shaik Ayub";
   const [text, setText] = useState("");
   const [index, setIndex] = useState(0);
 
@@ -23,7 +23,7 @@ export default function HomePage() {
   }, [index]);
 
   return (
-    <div className="w-full flex justify-center items-center min-h-screen bg-[#0f172a] text-white">
+    <div className="w-full flex justify-center items-center h-screen bg-[#0f172a] text-white">
       <motion.div
         id="home"
         className="flex flex-col items-center text-center px-4"
@@ -37,7 +37,7 @@ export default function HomePage() {
           transition={{ duration: 1.2 }}
         >
           <Image
-            src="/profile pic.jpg"
+            src="/profile.png"
             alt="Profile"
             width={110}
             height={110}

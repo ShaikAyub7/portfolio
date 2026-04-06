@@ -1,7 +1,7 @@
 export const projects = [
   {
     name: "Tab Time Tracker Browser Extension",
-    text: "Developed a Chrome extension to track user activity across tabs, displaying time spent on eachdomain in a user-friendly interface. ",
+    text: "Developed a Browser extension to track user activity across tabs, displaying time spent on eachdomain in a user-friendly interface. ",
     image: "./extension.png",
     technologies: " JavaScript, HTML, CSS",
     github: "https://github.com/ShaikAyub7/Chrome-Extension",

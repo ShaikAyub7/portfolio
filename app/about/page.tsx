@@ -23,7 +23,7 @@ const page = () => {
           transition={{ duration: 1.2 }}
         >
           <Image
-            src="/profile pic.jpg" // ✅ put inside public/
+            src="/profile.png" // ✅ put inside public/
             alt="Profile"
             width={150}
             height={150}

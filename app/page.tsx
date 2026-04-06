@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Projects from "@/components/Card";
+import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import HomePage from "@/components/HomePage";
 import Navbar from "@/components/Navbar";
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
+      <ContactForm />
       <Footer />
     </main>
   );

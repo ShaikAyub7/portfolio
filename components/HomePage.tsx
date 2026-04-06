@@ -7,17 +7,16 @@ import { FaSquareGithub, FaLinkedin } from "react-icons/fa6";
 import { useEffect, useState } from "react";
 
 export default function HomePage() {
-  const fullText = "I am Shaik Ayub";
+  const fullText = "I Am Shaik Ayub";
   const [text, setText] = useState("");
   const [index, setIndex] = useState(0);
 
-  // 🔥 Typing Effect Logic
   useEffect(() => {
     if (index < fullText.length) {
       const timeout = setTimeout(() => {
         setText((prev) => prev + fullText[index]);
         setIndex(index + 1);
-      }, 100); // typing speed
+      }, 100);
 
       return () => clearTimeout(timeout);
     }
@@ -57,8 +56,9 @@ export default function HomePage() {
 
         <h1 className="text-3xl sm:text-4xl font-bold mt-2 flex items-center">
           <span className="text-white">{text}</span>
-
-          <span className="ml-1 animate-pulse font-extralight">|</span>
+          {index < fullText.length && (
+            <span className="ml-1 animate-blink font-extralight">|</span>
+          )}{" "}
         </h1>
 
         <motion.div

@@ -2,7 +2,6 @@
 
 import { projects } from "@/data";
 import { FaGithub } from "react-icons/fa";
-import { FaLink } from "react-icons/fa6";
 import { LiaExternalLinkAltSolid } from "react-icons/lia";
 
 export default function Projects() {
@@ -18,7 +17,7 @@ export default function Projects() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="block lg:flex md:flex group items-center justify-around  bg-white/10 backdrop-blur-md border text-white border-white/20 rounded-2xl overflow-hidden transition duration-300 hover:scale-103   p-6"
+              className="block lg:flex md:flex group items-center justify-around  bg-white/10 backdrop-blur-md border text-white border-white/20 rounded-2xl overflow-hidden transition duration-300 hover:scale-105   z-9999999999999999  p-6"
             >
               <div className="overflow-hidden lg:w-2xl md:w-xl  w-full">
                 <img
@@ -27,7 +26,6 @@ export default function Projects() {
                   className="w-full h-52 object-contain rounded group-hover:scale-105 transition duration-300"
                 />
               </div>
-
               <div className="p-5 flex flex-col gap-3 w-full lg:w-lg">
                 <h3 className="text-lg font-semibold text-white">
                   {project.name}

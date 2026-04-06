@@ -10,7 +10,6 @@ export default function Contact() {
       className="w-full py-20 px-4 bg-gradient-to-b from-[#0f172a] to-[#020617] text-white"
     >
       <div className="max-w-5xl mx-auto text-center">
-        {/* Heading */}
         <motion.h2
           className="text-3xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
           initial={{ opacity: 0, y: 20 }}
@@ -24,9 +23,7 @@ export default function Contact() {
           you!
         </p>
 
-        {/* Contact Cards */}
         <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 mb-12">
-          {/* Email */}
           <motion.a
             href="mailto:skayub929@gmail.com"
             whileHover={{ scale: 1.05 }}
@@ -37,7 +34,6 @@ export default function Contact() {
             <span className="text-sm text-gray-400">skayub929@gmail.com</span>
           </motion.a>
 
-          {/* GitHub */}
           <motion.a
             href="https://github.com/ShaikAyub7"
             target="_blank"
@@ -50,7 +46,6 @@ export default function Contact() {
             <span className="text-sm text-gray-400">ShaikAyub7</span>
           </motion.a>
 
-          {/* LinkedIn */}
           <motion.a
             href="https://www.linkedin.com/in/shaik-ayub7"
             target="_blank"
@@ -64,16 +59,15 @@ export default function Contact() {
           </motion.a>
         </div>
 
-        {/* 🔥 Form */}
         <motion.form
           className="flex flex-col gap-6 max-w-2xl mx-auto bg-white/5 p-8 rounded-2xl border border-white/10 backdrop-blur-xl shadow-xl"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
         >
-          {/* Name */}
           <div className="relative">
             <input
               type="text"
+              name="name"
               required
               className="peer w-full p-3 bg-transparent border border-white/20 rounded-lg outline-none focus:border-blue-500"
             />
@@ -82,10 +76,10 @@ export default function Contact() {
             </label>
           </div>
 
-          {/* Email */}
           <div className="relative">
             <input
               type="email"
+              name="email"
               required
               className="peer w-full p-3 bg-transparent border border-white/20 rounded-lg outline-none focus:border-blue-500"
             />
@@ -94,10 +88,9 @@ export default function Contact() {
             </label>
           </div>
 
-          {/* Message */}
           <div className="relative">
             <textarea
-              //   rows="4"
+              name="description"
               required
               className="peer w-full p-3 bg-transparent border border-white/20 rounded-lg outline-none focus:border-blue-500"
             ></textarea>
@@ -106,7 +99,6 @@ export default function Contact() {
             </label>
           </div>
 
-          {/* Button */}
           <button
             type="submit"
             className="bg-gradient-to-r from-blue-500 to-purple-600 py-3 rounded-lg font-semibold hover:opacity-90 transition shadow-lg"

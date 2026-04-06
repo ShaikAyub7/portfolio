@@ -1,38 +1,33 @@
 "use client";
 
 import { skillList } from "@/data";
-import { motion } from "framer-motion";
 
 export default function Skills() {
   return (
-    <section id="skill" className="w-full py-16 px-4">
-      <motion.div
-        className="max-w-4xl mx-auto text-center"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-      >
+    <section id="skill" className="py-20 px-4">
+      <div className="max-w-5xl mx-auto text-center">
         {/* Heading */}
-        <h1 className="text-2xl sm:text-3xl font-bold mb-10">Skills</h1>
+        <h1 className="text-3xl font-bold mb-12">Skills</h1>
 
-        {/* Skills Grid */}
-        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        {/* Skills */}
+        <div className="flex flex-wrap justify-center gap-4">
           {skillList.map((skill, index) => (
-            <li
+            <div
               key={index}
-              className="flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-xl justify-center hover:scale-105 transition"
+              className="group flex items-center gap-3 px-5 py-3 rounded-full border border-white/10 bg-white/5 backdrop-blur-md hover:bg-white/10 hover:border-white/20 transition duration-300"
             >
-              <img
-                src={skill.icon}
-                alt={skill.language}
-                className="w-6 h-6 object-cover"
-              />
-              <span className="text-sm sm:text-base font-medium">
-                {skill.language}
-              </span>
-            </li>
+              {/* Icon */}
+              <img src={skill.icon} alt={skill.language} className="w-5 h-5" />
+
+              {/* Name */}
+              <span className="text-sm font-medium">{skill.language}</span>
+
+              {/* Hover Dot */}
+              <span className="w-2 h-2 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition"></span>
+            </div>
           ))}
-        </ul>
-      </motion.div>
+        </div>
+      </div>
     </section>
   );
 }

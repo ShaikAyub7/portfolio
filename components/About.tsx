@@ -1,9 +1,14 @@
 "use client";
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
     <section id="about" className="w-full py-16 px-4">
-      <div className="max-w-3xl mx-auto text-center">
+      <motion.div
+        className="max-w-3xl mx-auto text-center"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+      >
         {/* Heading */}
         <h1 className="text-2xl sm:text-3xl font-bold mb-6">About Me</h1>
 
@@ -16,7 +21,7 @@ export default function About() {
           challenges and building responsive, interactive websites that not only
           look great but also perform exceptionally well across all devices.
         </p>
-      </div>
+      </motion.div>
     </section>
   );
 }

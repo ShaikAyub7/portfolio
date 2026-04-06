@@ -2,12 +2,18 @@
 
 import { projects } from "@/data";
 import { FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
+
 import { LiaExternalLinkAltSolid } from "react-icons/lia";
 
 export default function Projects() {
   return (
     <section className="w-full py-16 px-4" id="projects">
-      <div className="max-w-4xl mx-auto">
+      <motion.div
+        className="max-w-4xl mx-auto"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+      >
         {/* Heading */}
         <h2 className="text-2xl sm:text-3xl font-bold text-center mb-10">
           My Projects
@@ -19,11 +25,11 @@ export default function Projects() {
               key={project.id}
               className="block lg:flex md:flex group items-center justify-around  bg-white/10 backdrop-blur-md border text-white border-white/20 rounded-2xl overflow-hidden transition duration-300 hover:scale-105   z-9999999999999999  p-6"
             >
-              <div className="overflow-hidden lg:w-2xl md:w-xl  w-full">
+              <div className="overflow-hidden lg:w-2xl md:w-xl rounded-lg w-full">
                 <img
                   src={project.image}
                   alt={project.name}
-                  className="w-full h-52 object-contain rounded group-hover:scale-105 transition duration-300"
+                  className="w-full h-52 object-fit rounded-xl  group-hover:scale-105 transition duration-300"
                 />
               </div>
               <div className="p-5 flex flex-col gap-3 w-full lg:w-lg">
@@ -57,7 +63,7 @@ export default function Projects() {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

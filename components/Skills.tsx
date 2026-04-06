@@ -1,11 +1,16 @@
 "use client";
 
 import { skillList } from "@/data";
+import { motion } from "framer-motion";
 
 export default function Skills() {
   return (
     <section id="skill" className="w-full py-16 px-4">
-      <div className="max-w-4xl mx-auto text-center">
+      <motion.div
+        className="max-w-4xl mx-auto text-center"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+      >
         {/* Heading */}
         <h1 className="text-2xl sm:text-3xl font-bold mb-10">Skills</h1>
 
@@ -27,7 +32,7 @@ export default function Skills() {
             </li>
           ))}
         </ul>
-      </div>
+      </motion.div>
     </section>
   );
 }

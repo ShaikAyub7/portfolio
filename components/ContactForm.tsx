@@ -6,7 +6,11 @@ import { postForm } from "@/utils/action";
 
 const ContactForm = () => {
   return (
-    <div className="mb-8">
+    <motion.div
+      className="mb-8"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+    >
       <h1 className="text-2xl text-center sm:text-3xl font-bold mb-6">
         Contact Me
       </h1>
@@ -58,7 +62,7 @@ const ContactForm = () => {
           Send Message 🚀
         </button>
       </motion.form>
-    </div>
+    </motion.div>
   );
 };
 

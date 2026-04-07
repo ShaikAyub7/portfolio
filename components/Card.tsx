@@ -23,7 +23,7 @@ export default function Projects() {
               className="group relative bg-white/5 border border-white/10 rounded-xl p-5 transition hover:bg-white/10"
             >
               {/* Top Accent Line */}
-              <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-100 rounded-lg transition" />
+              <div className="absolute top-0 left-0 w-full group-hover:opacity-100 rounded-lg transition rounded-r-lg" />
 
               <div className="flex flex-col md:flex-row gap-6">
                 {/* Image */}
@@ -52,7 +52,7 @@ export default function Projects() {
                     <a
                       href={project.link}
                       target="_blank"
-                      className="flex items-center gap-2 text-sm px-4 py-2 rounded-md bg-blue-600 hover:bg-blue-500 transition"
+                      className="flex items-center gap-2 text-sm px-4 py-2 rounded-md bg-blue-900 hover:bg-blue-500 transition"
                     >
                       Live
                       <LiaExternalLinkAltSolid size={14} />

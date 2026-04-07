@@ -13,7 +13,6 @@ export default function Projects() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
       >
-        {/* Heading */}
         <h2 className="text-3xl font-bold text-center mb-12">Projects</h2>
 
         <div className="flex flex-col gap-6">
@@ -22,7 +21,8 @@ export default function Projects() {
               key={project.id}
               className="group relative bg-white/5 border border-white/10 rounded-xl p-5 transition hover:bg-white/10"
             >
-              {/* Top Accent Line */}
+              <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-100 rounded-t-xl transition" />
+
               <div className="absolute top-0 left-0 w-full group-hover:opacity-100 rounded-lg transition rounded-r-lg" />
 
               <div className="flex flex-col md:flex-row gap-6">
@@ -66,6 +66,15 @@ export default function Projects() {
                       <FaGithub size={14} />
                       Code
                     </a>
+                    {project.users ? (
+                      <a href="#" className=" flex justify-self-end">
+                        <p className="text-xs text-center text-green-400 mt-2">
+                          Used by 80+ weekly users
+                        </p>{" "}
+                      </a>
+                    ) : (
+                      ""
+                    )}
                   </div>
                 </div>
               </div>

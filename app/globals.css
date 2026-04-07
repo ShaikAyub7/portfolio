@@ -11,8 +11,9 @@ html {
 body {
   background: #0f172a;
 }
-* {
-  cursor: none !important;
+html,
+body {
+  cursor: none;
 }
 @media (min-width: 768px) {
   * {

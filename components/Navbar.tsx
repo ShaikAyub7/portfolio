@@ -17,7 +17,7 @@ const Navbar = () => {
         {/* Sliding Pill */}
         <div
           className="absolute top-1 bottom-1 rounded-full 
-          bg-blue-600/40 transition-all duration-300 ease-in-out"
+          bg-blue-600/40 "
         />
 
         <ul className="relative flex items-center justify-around transition-all">
@@ -25,10 +25,13 @@ const Navbar = () => {
             const isActive = pathName === link.href;
 
             return (
-              <li key={link.id} className="flex-1 text-center">
+              <li
+                key={link.id}
+                className="flex-1 text-center transition-all duration-500 ease-in-out"
+              >
                 <a
                   href={link.href}
-                  className={`block py-2 text-sm font-medium transition-all duration-200
+                  className={`block py-2 text-sm font-medium transition-all duration-600 
                   ${
                     isActive
                       ? "text-white bg-blue-950 rounded-4xl"

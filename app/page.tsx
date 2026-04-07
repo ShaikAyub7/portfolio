@@ -4,7 +4,6 @@ import ContactForm from "@/components/ContactForm";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import HomePage from "@/components/HomePage";
-import Navbar from "@/components/Navbar";
 import Skills from "@/components/Skills";
 
 export default function Home() {

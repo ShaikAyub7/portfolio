@@ -1,9 +1,10 @@
 export const projects = [
   {
     name: "Tab Time Tracker Browser Extension",
-    text: "Developed a Browser extension to track user activity across tabs, displaying time spent on eachdomain in a user-friendly interface. ",
-    image: "./extension2.png",
+    text: "Developed a browser extension that tracks time spent on each website in real-time, helping users monitor productivity and manage screen time effectively. Built with a focus on performance, privacy, and seamless background tracking, the extension provides daily insights, customizable time limits, and instant notifications. All data is stored locally, ensuring user privacy and security while delivering a smooth and intuitive experience.",
+    image: "./extension4.png",
     technologies: " JavaScript, HTML, CSS",
+    users: 80,
     github: "https://github.com/ShaikAyub7/Chrome-Extension",
 
     link: "https://microsoftedge.microsoft.com/addons/detail/tab-time-tracker/aoecofhfffbfnkekppdgicmnfjmfdmoe",
@@ -12,7 +13,7 @@ export const projects = [
   {
     id: 2,
     name: "GPT Genius",
-    text: "AI-powered web application using React.js and Google Gemini API with real-time responses and improved UX.",
+    text: "Built an AI-powered chat application using Next.js and OpenAI API, enabling real-time conversations with support for text and image generation. Designed with a focus on performance, smooth user experience, and scalable architecture, the app includes features like multiple conversation modes, prompt customization, and persistent chat history.",
     image: "./gptgenius.png",
     technologies: "React.js, Gemini API",
     link: "https://gpt-genius-hazel.vercel.app/",
@@ -21,7 +22,7 @@ export const projects = [
   {
     id: 3,
     name: "Cloud Link Weather App",
-    text: "React-based weather app showing live temperature, humidity, wind speed, and conditions with search functionality.",
+    text: "Built a weather application that provides real-time weather data for any location using external APIs. Designed with a clean and responsive UI, the app displays key metrics such as temperature, humidity, and weather conditions, ensuring a smooth and user-friendly experience.",
     image: "./cloudlink.png",
     technologies: "React.js, Weather API",
     link: "https://weather--app-1.vercel.app/",

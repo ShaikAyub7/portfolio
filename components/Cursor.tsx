@@ -1,4 +1,5 @@
 "use client";
+
 import { motion, useMotionValue } from "framer-motion";
 import { useEffect } from "react";
 
@@ -8,8 +9,8 @@ export default function Cursor() {
 
   useEffect(() => {
     const move = (e: MouseEvent) => {
-      x.set(e.clientX - 16);
-      y.set(e.clientY - 16);
+      x.set(e.clientX - 12);
+      y.set(e.clientY - 12);
     };
 
     window.addEventListener("mousemove", move);
@@ -17,11 +18,16 @@ export default function Cursor() {
   }, [x, y]);
 
   return (
-    <motion.img
-      src="/arrow.png"
-      alt="cursor"
-      style={{ x, y }}
-      className="fixed w-8 h-8 pointer-events-none z-[999999999]"
-    />
+    <>
+      {/* Hide default cursor */}
+      <style>{`* { cursor: none; }`}</style>
+
+      <motion.img
+        src="/arrow.png"
+        alt="cursor"
+        style={{ x, y }}
+        className="fixed w-8 h-8 pointer-events-none z-[999999999]"
+      />
+    </>
   );
 }

@@ -19,7 +19,6 @@ export default function Cursor() {
 
   return (
     <>
-      {/* Hide default cursor */}
       <style>{`* { cursor: none; }`}</style>
 
       <motion.img

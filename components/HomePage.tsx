@@ -16,7 +16,7 @@ export default function HomePage() {
       const timeout = setTimeout(() => {
         setText((prev) => prev + fullText[index]);
         setIndex(index + 1);
-      }, 100);
+      }, 200);
 
       return () => clearTimeout(timeout);
     }

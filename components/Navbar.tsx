@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { navbarLink } from "../data";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const pathName = usePathname();
@@ -9,7 +10,11 @@ const Navbar = () => {
   const activeIndex = navbarLink.findIndex((link) => link.href === pathName);
 
   return (
-    <nav className="fixed top-4 z-[9999] w-full flex justify-center ">
+    <motion.nav
+      initial={{ y: -80, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      className="fixed top-4 z-[9999] w-full flex justify-center "
+    >
       <div
         className="relative w-full max-w-[500px] mx-4 rounded-full 
         bg-white/10 border border-white/20 backdrop-blur-xl p-2"
@@ -45,7 +50,7 @@ const Navbar = () => {
           })}
         </ul>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

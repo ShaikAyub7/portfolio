@@ -19,7 +19,6 @@ const Navbar = () => {
         className="relative w-full max-w-[500px] mx-4 rounded-full 
         bg-white/10 border border-white/20 backdrop-blur-xl p-2"
       >
-        {/* Sliding Pill */}
         <div
           className="absolute top-1 bottom-1 rounded-full 
           bg-blue-600/40 "

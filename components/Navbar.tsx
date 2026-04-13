@@ -13,7 +13,7 @@ const Navbar = () => {
     <motion.nav
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      className="fixed top-4 z-[9999] w-full flex justify-center "
+      className="fixed top-4 z-[9999] w-full flex justify-center transition-all ease-in-out duration-2 "
     >
       <div
         className="relative w-full max-w-[500px] mx-4 rounded-full 

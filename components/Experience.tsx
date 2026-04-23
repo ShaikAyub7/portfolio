@@ -27,11 +27,9 @@ export default function ExperienceRoute() {
   return (
     <section id="experience" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
-        {/* Heading */}
         <h1 className="text-3xl font-bold text-center mb-16">My Journey</h1>
 
         <div className="relative">
-          {/* Vertical Route Line */}
           <div className="absolute left-1/2 top-0 h-full w-[2px] bg-white/20 transform -translate-x-1/2" />
 
           {experiences.map((exp, index) => {
@@ -46,7 +44,6 @@ export default function ExperienceRoute() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
               >
-                {/* Card */}
                 <div className="w-[45%]">
                   <div className="bg-white/5 border border-white/10 rounded-xl p-5 backdrop-blur-md">
                     <p className="text-sm text-gray-400 mb-1">{exp.time}</p>
@@ -59,7 +56,6 @@ export default function ExperienceRoute() {
                   </div>
                 </div>
 
-                {/* Dot (Route Point) */}
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-5 h-5 bg-blue-500 rounded-full border-4 border-black shadow-md" />
               </motion.div>
             );

@@ -9,6 +9,8 @@ const Navbar = () => {
 
   const activeIndex = navbarLink.findIndex((link) => link.href === pathName);
 
+  console.log((() => "hello world")());
+
   return (
     <motion.nav
       initial={{ y: -80, opacity: 0 }}

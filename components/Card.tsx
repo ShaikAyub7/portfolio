@@ -35,7 +35,6 @@ export default function Projects() {
                   />
                 </div>
 
-                {/* Content */}
                 <div className="flex flex-col justify-between w-full md:w-1/2">
                   <div>
                     <h3 className="text-xl font-semibold mb-2">
@@ -47,7 +46,6 @@ export default function Projects() {
                     </p>
                   </div>
 
-                  {/* Buttons */}
                   <div className="flex gap-3 mt-5">
                     <a
                       href={project.link}

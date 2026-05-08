@@ -26,7 +26,6 @@ export default function Projects() {
               <div className="absolute top-0 left-0 w-full group-hover:opacity-100 rounded-lg transition rounded-r-lg" />
 
               <div className="flex flex-col md:flex-row gap-6">
-                {/* Image */}
                 <div className="w-full md:w-1/2 overflow-hidden rounded-lg">
                   <img
                     src={project.image}

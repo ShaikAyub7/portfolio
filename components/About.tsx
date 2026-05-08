@@ -9,10 +9,8 @@ export default function About() {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
       >
-        {/* Heading */}
         <h1 className="text-2xl sm:text-3xl font-bold mb-6">About Me</h1>
 
-        {/* Paragraph */}
         <p className=" leading-7 sm:leading-8 text-sm sm:text-base">
           Hi, I’m Shaik Ayub, a passionate front-end developer dedicated to
           crafting seamless, user-friendly web experiences. With a keen eye for

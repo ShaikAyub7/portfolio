@@ -7,9 +7,7 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   const pathName = usePathname();
 
-  const activeIndex = navbarLink.findIndex((link) => link.href === pathName);
-
-  console.log((() => "hello world")());
+  // const activeIndex = navbarLink.findIndex((link) => link.href === pathName);
 
   return (
     <motion.nav

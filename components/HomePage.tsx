@@ -97,7 +97,6 @@ export default function HomePage() {
           </motion.a>
         </motion.div>
 
-        {/* Download CV */}
         <motion.a
           href="/resume.pdf"
           download

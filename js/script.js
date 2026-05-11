@@ -1,6 +1,5 @@
 "use client";
 
-const { div } = require("framer-motion/client");
 const { useState } = require("react");
 
 const arr = [1, 2, 3, 4, 5, [6, 7], [[8, 9]]];
@@ -35,13 +34,18 @@ function fun2(action) {
 
 fun2(fun);
 
-export const CounterFun = () => {
-  const [count, setCounter] = useState(0);
+const api = "https://www.google.com";
 
-  return (
-    <div className="absolute top-35">
-      <div>{count}</div>
-      <button onClick={() => setCounter(count + 1)}>click</button>
-    </div>
-  );
-};
+function fetchFun(api) {
+  const response = fetch(api)
+    .then((data) => {
+      console.log(data.url.startsWith("h"));
+    })
+    .catch((err) => {
+      console.log(err);
+    })
+    .finally(() => {
+      console.log("loading..");
+    });
+}
+fetchFun(api);

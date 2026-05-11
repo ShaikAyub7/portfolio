@@ -58,7 +58,7 @@ export default function HomePage() {
           <span className="text-white">{text}</span>
           {index < fullText.length && (
             <span className="ml-1 animate-blink font-extralight">|</span>
-          )}{" "}
+          )}
         </h1>
 
         <motion.div

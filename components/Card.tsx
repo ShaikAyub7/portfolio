@@ -1,5 +1,4 @@
 "use client";
-
 import { projects } from "@/data";
 import { FaGithub } from "react-icons/fa";
 import { LiaExternalLinkAltSolid } from "react-icons/lia";
@@ -14,7 +13,6 @@ export default function Projects() {
         whileInView={{ opacity: 1, y: 0 }}
       >
         <h2 className="text-3xl font-bold text-center mb-12">Projects</h2>
-
         <div className="flex flex-col gap-6">
           {projects.map((project) => (
             <div
